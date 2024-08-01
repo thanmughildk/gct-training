@@ -20,8 +20,8 @@ object SQLContextExample extends App {
   df.show()
   df.printSchema()
 
-  df.createOrReplaceTempView("TAB")
-  sqlContext.sql("select * from TAB")
+  df.createOrReplaceTempView("tab")
+  sqlContext.sql("select * from tab")
     .show(false)
 
 }
